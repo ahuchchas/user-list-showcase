@@ -51,13 +51,14 @@ export default function AddUserModal({ onAdd, onCancel }) {
     };
 
     onAdd(newUser);
+    alert("New user added successfully!");
   }
   return (
     <div className="fixed w-screen h-screen bg-black/80 top-0 left-0 z-5 p-2">
       <div className="p-8 bg-white opacity-100 sm:shadow-md rounded-md border border-[#BFC8E5] z-10 relative sm:absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full sm:max-w-[450px] overflow-auto">
         <h1 className="text-center font-bold text-xl mb-4">Add New User</h1>
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
-          <label className="font-bold">First Name:</label>
+          <label>First Name:</label>
           <input
             type="text"
             name="firstName"
@@ -68,7 +69,7 @@ export default function AddUserModal({ onAdd, onCancel }) {
         </div>
 
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
-          <label className="font-bold">Last Name:</label>
+          <label>Last Name:</label>
           <input
             type="text"
             name="lastName"
@@ -79,7 +80,7 @@ export default function AddUserModal({ onAdd, onCancel }) {
         </div>
 
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
-          <label className="font-bold">Email:</label>
+          <label>Email:</label>
           <input
             type="text"
             name="email"
@@ -90,7 +91,7 @@ export default function AddUserModal({ onAdd, onCancel }) {
         </div>
 
         <div className="flex flex-col justify-center sm:flex-row sm:justify-between sm:items-center">
-          <label className="font-bold">Street & Suite:</label>
+          <label>Street & Suite:</label>
           <input
             type="text"
             name="address"
@@ -100,7 +101,7 @@ export default function AddUserModal({ onAdd, onCancel }) {
           />
         </div>
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
-          <label className="font-bold">City:</label>
+          <label>City:</label>
           <input
             type="text"
             name="city"
@@ -110,7 +111,7 @@ export default function AddUserModal({ onAdd, onCancel }) {
           />
         </div>
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
-          <label className="font-bold">Company Name:</label>
+          <label>Company Name:</label>
           <input
             type="text"
             name="company"
@@ -120,7 +121,7 @@ export default function AddUserModal({ onAdd, onCancel }) {
           />
         </div>
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
-          <label className="font-bold">Avatar URL:</label>
+          <label>Avatar URL:</label>
           <input
             type="text"
             name="image"
@@ -131,7 +132,7 @@ export default function AddUserModal({ onAdd, onCancel }) {
         </div>
         <div className="m-4 flex justify-between ">
           <button
-            className="p-2 w-[80px] bg-red-400 rounded text-white "
+            className="p-2 w-[80px] font-light bg-red-400 rounded text-white "
             onClick={onCancel}
           >
             Cancel

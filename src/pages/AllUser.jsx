@@ -98,6 +98,13 @@ export default function AllUser() {
           <span>Loding...</span>
         </div>
       )}
+
+      {filteredUsers.length < 1 && (
+        <div className="flex justify-center mt-20 h-screen">
+          <span>No user matched your search!</span>
+        </div>
+      )}
+
       {/* user list */}
       <div className="my-10 grid gap-x-1 gap-y-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto">
         {sortedUsers.map((user) => (
