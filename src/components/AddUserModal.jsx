@@ -53,8 +53,8 @@ export default function AddUserModal({ onAdd, onCancel }) {
     onAdd(newUser);
   }
   return (
-    <div className="fixed w-screen h-screen bg-black/80 top-0 left-0 z-5 p-">
-      <div className="p-8 bg-white opacity-100 sm:shadow-md rounded-md border border-[#BFC8E5] z-10 relative sm:absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full sm:max-w-[450px]  max-h-[90vh] overflow-auto">
+    <div className="fixed w-screen h-screen bg-black/80 top-0 left-0 z-5 p-2">
+      <div className="p-8 bg-white opacity-100 sm:shadow-md rounded-md border border-[#BFC8E5] z-10 relative sm:absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full sm:max-w-[450px] overflow-auto">
         <h1 className="text-center font-bold text-xl mb-4">Add New User</h1>
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
           <label className="font-bold">First Name:</label>
