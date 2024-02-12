@@ -65,7 +65,7 @@ export default function AllUser() {
 
       {/* action area */}
       <div className="flex flex-col-reverse items-stretch sm:flex-row sm:justify-between sm:items-start mb-4">
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-3">
           <SearchBox value={searchTerm} onSearch={handleSearch} />
           {/* sort option */}
           <select onChange={(e) => setSortTerm(e.target.value)}>
