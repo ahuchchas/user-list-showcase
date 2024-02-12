@@ -1,7 +1,5 @@
+import AllUser from "./pages/AllUser";
+
 export default function App() {
-  return (
-    <div>
-      <h1 className="text-3xl font-bold">Hello world!</h1>
-    </div>
-  );
+  return <AllUser />;
 }
