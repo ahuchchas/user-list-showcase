@@ -93,14 +93,14 @@ export default function AllUser() {
       )}
 
       {loading && (
-        <div className="flex justify-center items-center h-screen">
+        <div className="flex justify-center mt-24 h-screen">
           <div className="rounded-full border-4 border-gray-600 h-6 w-6 mr-2"></div>
           <span>Loding...</span>
         </div>
       )}
 
       {filteredUsers.length < 1 && (
-        <div className="flex justify-center mt-20 h-screen">
+        <div className="flex justify-center mt-24 h-screen">
           <span>No user matched your search!</span>
         </div>
       )}
