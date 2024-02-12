@@ -32,7 +32,7 @@ export default function SearchBox({ value, onSearch }) {
         </defs>
       </svg>
       <input
-        className="border rounded px-4 py-2 ml-2 "
+        className="border rounded px-4 py-2 ml-2  w-full"
         type="text"
         placeholder="Search user by name"
         value={value}

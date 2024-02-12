@@ -64,7 +64,7 @@ export default function AllUser() {
       <h1 className="pb-6 font-extrabold text-3xl">All Users</h1>
 
       {/* action area */}
-      <div className="flex flex-col-reverse sm:flex-row sm:justify-between sm:items-start mb-4">
+      <div className="flex flex-col-reverse items-stretch sm:flex-row sm:justify-between sm:items-start mb-4">
         <div className="flex flex-col gap-1">
           <SearchBox value={searchTerm} onSearch={handleSearch} />
           {/* sort option */}
