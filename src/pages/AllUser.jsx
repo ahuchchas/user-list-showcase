@@ -64,25 +64,26 @@ export default function AllUser() {
       <h1 className="pb-6 font-extrabold text-3xl">All Users</h1>
 
       {/* action area */}
-      <div className="flex justify-between mb-4">
-        <SearchBox value={searchTerm} onSearch={handleSearch} />
+      <div className="flex flex-col-reverse sm:flex-row sm:justify-between sm:items-start mb-4">
+        <div className="flex flex-col gap-1">
+          <SearchBox value={searchTerm} onSearch={handleSearch} />
+          {/* sort option */}
+          <select onChange={(e) => setSortTerm(e.target.value)}>
+            <option value="">Sort by</option>
+            <option value="name">Sorted by Name</option>
+            <option value="email">Sorted by Email</option>
+            <option value="company">Sorted by Company Name</option>
+          </select>
+        </div>
 
         {/* add user button */}
         <button
-          className="bg-[#849FFF] text-white rounded-lg px-4 py-2 ml-1"
+          className="bg-[#849FFF] text-white rounded-lg px-4 py-2 mb-2"
           onClick={() => setShowModal(true)}
         >
           Add User
         </button>
       </div>
-
-      {/* sort option */}
-      <select onChange={(e) => setSortTerm(e.target.value)}>
-        <option value="">Sort by</option>
-        <option value="name">Sorted by Name</option>
-        <option value="email">Sorted by Email</option>
-        <option value="company">Sorted by Company Name</option>
-      </select>
 
       {showModal && (
         <AddUserModal

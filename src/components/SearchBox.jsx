@@ -3,7 +3,6 @@ export default function SearchBox({ value, onSearch }) {
   return (
     <div className="flex items-center">
       <svg
-        className="hidden sm:inline"
         width="32"
         height="32"
         viewBox="0 0 32 32"
@@ -33,7 +32,7 @@ export default function SearchBox({ value, onSearch }) {
         </defs>
       </svg>
       <input
-        className="border rounded px-4 py-2 sm:ml-2 "
+        className="border rounded px-4 py-2 ml-2 "
         type="text"
         placeholder="Search user by name"
         value={value}

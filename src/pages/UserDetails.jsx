@@ -13,7 +13,7 @@ export default function UserDetails() {
       <Link className="mx-8 md:mx-16 text-[#849FFF]" to="/">
         &lt; Go Back
       </Link>
-      <div className="max-w-md mx-auto p-8 bg-white border border-[#BFC8E5] sm:shadow-md rounded-md overflow-hidden">
+      <div className="max-w-md mx-auto p-8 bg-white sm:border sm:border-[#BFC8E5] sm:shadow-md rounded-md overflow-hidden">
         <img
           className="w-32 h-32 rounded-full mx-auto mb-4"
           src={user.image}
